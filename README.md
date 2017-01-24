@@ -286,7 +286,7 @@ Use JavaScript's [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 ### Independent Practice
 
-Practice with this [training](https://github.com/sf-wdi-34/js-data-types-training).  
+Practice with this [training](https://github.com/sf-wdi-35/js-data-types-training).  
 
 
 ### Closing Thoughts
@@ -295,7 +295,7 @@ For web developers, it's critically important to be able to work with JavaScript
 
 The most important things to practice right now are:
 
-- getting and setting values from within complex structures that include nested arrays and objects.
+- getting and setting values from within complex structures that include nested arrays and strings.
 - learning to read documentation.
 
 ### Resources
