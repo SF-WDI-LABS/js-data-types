@@ -1,5 +1,6 @@
 <!--
-Creator: SF WDI instructors; most recent edits by Michelle Ferreirae
+Creator: SF WDI instructors
+Last edited by: Michelle Ferreirae
 Location: SF
 -->
 
@@ -15,6 +16,10 @@ JavaScript is the most complete, capable language usable across browsers. It let
 
 The need to process information drives programming languages.  JavaScript's data types define how it can store and manipulate information. They're the building blocks of everything that can be done in JavaScript.
 
+
+For web developers, it's also critically important to be able to work with JavaScript objects.  JavaScript's features are mostly built into objects like `Array`, `Function`, and, for web, `document`.
+
+
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
@@ -22,7 +27,6 @@ The need to process information drives programming languages.  JavaScript's data
 - Identify JavaScript data types.
 - Declare variables in the Chrome developer tools.
 - Get and set the values of variables.
-- Use built-in methods to manipulate arrays and perform math operations.
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
@@ -142,7 +146,7 @@ Note that you can also freely change the type of data a variable is storing.
 ####Check for Understanding
 Working with a partner and whiteboarding on your table, write what type each variable has, as well as what the value of the final expression would be.
 
-1. 
+1.
 ```js
   var a = 3;
   var b = 7;
@@ -166,6 +170,105 @@ Working with a partner and whiteboarding on your table, write what type each var
   var b = "The truth is ";
   b + a;
 ```
+
+### Objects
+
+Primitive data types are not enough for most programming purposes. Objects are **reference data types** that allow us to group primitives together.
+
+Instead of storing a value, variables holding objects store a reference to a location in memory, and the computer looks it up when needed.
+
+
+  ```js
+  var shirt = { size: "L", color: 'green', clean: false };
+  ```
+
+Objects store information in key-value pairs. The key acts like a label, and the value is the data or behavior associated with that label.
+
+`Object` is the most basic reference type in JavaScript. Every other non-primitive we'll use -- `Array`, `Function`, `Date` -- is actually built out from the basic `Object` type.
+
+
+#### Object Manipulation
+
+**Creating** an object literal:
+
+```js
+var person = { name: 'Bill', height: '5 feet, 9 inches', age: 34 };
+```
+
+**Getting** the value associated with a key:
+
+```js
+// this is called bracket notation:
+person['age']; //=> 34
+// this is called dot notation:
+person.age;    //=> 34
+
+// what if key doesn't exist?
+person['hasGlasses']; //=> undefined
+```
+
+**Adding** a key-value pair:
+
+```js
+person['hairColor'] = 'blonde';
+person.hairColor = 'blonde';
+//=> { name: 'Bill', height: '5 feet, 9 inches', age: 34, hairColor: 'blonde' }
+```
+
+**Setting** the value for a key:
+
+```js
+person['hairColor'] = 'green';
+person.hairColor = 'green';
+//=> { name: 'Bill', height: '5 feet, 9 inches', age: 34, hairColor: 'green' }
+```
+
+
+**Semi-removing** a value:  
+
+Use `null` as a marker for an empty value.
+
+```js
+person.hairColor = null;
+```
+
+
+**Fully removing** a key-value pair (rare):
+
+```js
+delete person.height;
+//=> { name: 'Bill', age: 34, hairColor: 'green' }
+```
+
+Finding **keys** in the object (rare):
+
+```js
+var keys = Object.keys(person);
+//=> ['name', 'age', 'hairColor']
+```
+
+
+**Looping** through Objects (rare):
+
+One way to loop through objects in JavaScript is to use `for ... in` loops:
+
+```js
+for (key in person){
+  // this next condition is required because of the prototype chain, which we haven't talked about quite yet
+  if (person.hasOwnProperty(key)){  
+    console.log(key, ": ", person[key]);
+  }
+}
+// the order is not guaranteed, but this console logs:
+//   'name': 'Bill'
+//   'age': 34
+//   'hairColor': null
+```
+
+
+
+
+
 ### Arrays
 When we're working with data, we generally need to work with more than just primitives. Arrays store collections of data in **sequential** order.  Arrays are an example of a **reference data type** that allows us to group primitives together.
 Arrays are great for:
