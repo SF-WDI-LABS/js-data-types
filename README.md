@@ -126,6 +126,9 @@ ES6 introduced a more powerful way to combine strings, variables and expressions
 
 ```js
 var target = 'world';   // in ES6, we'll use let instead of var. more on that soon!
+`${target}`
+// "world"
+
 `Hello, ${target}!`
 // "Hello, world!"
 
