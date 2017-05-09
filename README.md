@@ -77,15 +77,14 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
 
  Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as:
 
-<ol>
-  <li>`name`</li>
-  <li>`isGaStudent`, whether or not they are a student at GA</li>
-  <li>`age`</li>
-  <li>`city`</li>
-  <li>`state`</li>
-  <li>`zipCode`</li>
-  <li>`phoneNumber`</li>
-</ol>
+1. `name`
+1. `isGaStudent`, whether or not they are a student at GA
+1. `age`
+1. `city`
+1. `state`
+1. `zipCode`
+1. `phoneNumber`
+
 
 ### Expressions and Operations
 
