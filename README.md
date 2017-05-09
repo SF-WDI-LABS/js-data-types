@@ -287,7 +287,7 @@ Use JavaScript's [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 ### Independent Practice
 
-Practice with this [training](https://github.com/sf-wdi-35/js-data-types-training).  
+Practice with this [training](https://github.com/SF-WDI-LABS/js-data-types-training).  
 
 
 ### Closing Thoughts
