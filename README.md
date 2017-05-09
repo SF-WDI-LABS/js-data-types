@@ -133,8 +133,7 @@ var target = 'world';   // in ES6, we'll use let instead of var. more on that so
 // "WDI 2017"
 ```
 
-
-### Variables
+## Variables
 
 Variables are labeled locations for storing data. They save programmers time.
 
@@ -177,7 +176,7 @@ Working with a partner and whiteboarding on your table, write what type each var
 ```
 
 
-#### ES5 Variable Creation: global and `var`
+### ES5 Variable Creation: global and `var`
 
 There are 4 ways to create a variable in JavaScript.  Two of them have been available since before ES6.
 
@@ -202,7 +201,7 @@ The two strategies above have been around as long as JavaScript. Variables creat
 
 That'll be clearer with an example.
 
-##### Check for Understanding
+#### Check for Understanding
 
 Examine the code sample below.  What do you think will be logged to the console each time?  Write down your guesses, then run the code in developer tools.
 
@@ -219,7 +218,7 @@ console.log('outside function scope', sum);
 ```
 
 
-#### ES6 Variable Creation: `let` and `const`
+### ES6 Variable Creation: `let` and `const`
 
 Using `var` was the best way to create variables in ES5, but in ES6 two new strategies were introduced.
 
@@ -245,7 +244,7 @@ Variables created with the reserved word `const`:
 * do not get hoisted
 * are **constant** - they can NEVER be changed inside their scope
 
-#### Best Practices for Variable Creation
+### Best Practices for Variable Creation
 
 Now that ES6 is fully in use, best practices say:  
 - prefer `const` for any named values that don't need to change
@@ -255,7 +254,7 @@ Now that ES6 is fully in use, best practices say:
 
 In WDI, you will use code with `let`, `const`, and `var` so that you can read, write, and debug any version.
 
-### Objects
+## Objects
 
 Primitive data types are not enough for most programming purposes. Objects are **reference data types** that allow us to group primitives together.
 
@@ -271,7 +270,7 @@ Objects store information in key-value pairs. The key acts like a label, and the
 `Object` is the most basic reference type in JavaScript. Every other non-primitive we'll use -- `Array`, `Function`, `Date` -- is actually built out from the basic `Object` type.
 
 
-#### Object Manipulation
+### Object Manipulation
 
 **Creating** an object literal:
 
@@ -353,7 +352,7 @@ for (key in person){
 
 
 
-### Arrays
+## Arrays
 
 Arrays store collections of data in **sequential** order.  Arrays are another example of a **reference data type** that allows us to group primitives together.
 Arrays are great for:
@@ -368,7 +367,7 @@ const friends = ["Moe", "Larry", "Curly"];
 // ["Moe", "Larry", "Curly"]
 ```
 
-#### Array Manipulation
+### Array Manipulation
 
 **Creating** an array (literal):
 
@@ -390,7 +389,7 @@ fruits[3]; // "Durian"
 fruits[3] = "Grape";
 ```
 
-#### Array Properties and Methods
+### Array Properties and Methods
 
 **Finding the number of elements**, in the **length** property:
 
@@ -477,12 +476,12 @@ Math.round(2.5);
 
 Use JavaScript's [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) method to check the type of a variable or value.
 
-### Independent Practice
+## Independent Practice
 
 Practice with this [training](https://github.com/SF-WDI-LABS/js-data-types-training).  
 
 
-### Closing Thoughts
+## Closing Thoughts
 
 For web developers, it's critically important to be able to work with JavaScript objects.  JavaScript's features are mostly built into objects like `Date`, `Math`, and `document`. We'll cover objects in more detail later.
 
