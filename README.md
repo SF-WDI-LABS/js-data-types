@@ -183,7 +183,7 @@ There are 4 ways to create a variable in JavaScript.  Two of them have been avai
 1. Just assign a value to a name using the assignment operator `=`:
 
   ```js
-  document = 'main';
+  word = 'serenity';
   ```
 
    Creating a variable this gives it **global scope**, meaning it can be accessed very widely, including anywhere in its file.  This is considered a **bad practice** because it's almost always a mistake, or it leads to mistakes like accidentally overwriting an external variable with the same name.
