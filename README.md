@@ -85,7 +85,6 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
 1. `zipCode`
 1. `phoneNumber`
 
-
 ### Expressions and Operations
 
 An expression is code that evaluates to some value.
@@ -230,12 +229,10 @@ Using `var` was the best way to create variables in ES5, but in ES6 two new stra
   let highScorer;
   let highScore = 0;
   ```
-
   The reserved word `let` works very similarly to `var`, except that variables created with `let`:
     * have **block scope** instead of function scope
     * do not get hoisted
     * can't be redeclared at the same scope level (the value can change, though)
-
 
 2. Create a constant with the reserved word `const`, and give it an initial value:
 
@@ -243,10 +240,10 @@ Using `var` was the best way to create variables in ES5, but in ES6 two new stra
   const minimum = 0;
   ```
 
-  "Variables" created with the reserved word `const`:
-    * have **block scope** instead of function scope (like `let`)
-    * do not get hoisted
-    * are **constant** - they can NEVER be changed inside their scope
+Variables created with the reserved word `const`:
+* have **block scope** instead of function scope (like `let`)
+* do not get hoisted
+* are **constant** - they can NEVER be changed inside their scope
 
 #### Best Practices for Variable Creation
 
