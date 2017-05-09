@@ -65,18 +65,19 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
   <p>
     Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
     <ol>
-      <li>`name`</li>
-      <li>`gaStudent`, whether or not they are a student at GA</li>
-      <li>`age`</li>
-      <li>`streetNumber`</li>
-      <li>`streetName`</li>
-      <li>`city`</li>
-      <li>`state`</li>
-      <li>`zipCode`</li>
-      <li>`phoneNumber`</li>
+      <li>name</li>
+      <li>gaStudent, whether or not they are a student at GA</li>
+      <li>age</li>
+      <li>streetNumber</li>
+      <li>streetName</li>
+      <li>city</li>
+      <li>state</li>
+      <li>zipCode</li>
+      <li>phoneNumber</li>
     </ol>
   </p>
 </details>
+
 ### Expressions and Operations
 
 An expression is code that evaluates to some value.
@@ -139,10 +140,10 @@ lunchTime = '12:15';
 
 Note that you can also freely change the type of data a variable is storing.
 
-####Check for Understanding
+#### Check for Understanding
 Working with a partner and whiteboarding on your table, write what type each variable has, as well as what the value of the final expression would be.
 
-1. 
+1.
 ```js
   var a = 3;
   var b = 7;
@@ -180,7 +181,7 @@ var friends = ["Moe", "Larry", "Curly"];
 //=> ["Moe", "Larry", "Curly"]
 ```
 
-####Array Manipulation
+#### Array Manipulation
 
 **Creating** an array (literal):
 
@@ -286,7 +287,7 @@ Use JavaScript's [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 ### Independent Practice
 
-Practice with this [training](https://github.com/sf-wdi-34/js-data-types-training).  
+Practice with this [training](https://github.com/SF-WDI-LABS/js-data-types-training).  
 
 
 ### Closing Thoughts
@@ -295,7 +296,7 @@ For web developers, it's critically important to be able to work with JavaScript
 
 The most important things to practice right now are:
 
-- getting and setting values from within complex structures that include nested arrays and objects.
+- getting and setting values from within complex structures that include nested arrays and strings.
 - learning to read documentation.
 
 ### Resources
