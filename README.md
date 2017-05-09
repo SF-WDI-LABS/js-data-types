@@ -160,7 +160,7 @@ Working with a partner and whiteboarding on your table, write what type each var
 ```js
   var a = "Hello";
   var b = "name";
-  var c = a + " " + name;
+  var c = a + " " + b;
 ```
 3.
 ```js
