@@ -448,7 +448,7 @@ fruits.indexOf("Jackfruit"); // 9
 fruits[9]; // "Jackfruit"
 ``` -->
 
-![img](http://www.bazarmcbean.com/images/i0oyfwcdsj-caa32f16-489e-e7b9-dadf-028d075cac21.jpgg)
+![img](http://www.bazarmcbean.com/images/i0oyfwcdsj-caa32f16-489e-e7b9-dadf-028d075cac21.jpg)
 
 
 Check out MDN's [Array documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) for more information on arrays. In particular, all of the methods listed in the [Array instances](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_instances) section are available to use with JavaScript arrays. Commonly used array methods include `push`, `pop`, `join`, `sort`, and `reverse`.
