@@ -232,6 +232,7 @@ Using `var` was the best way to create variables in ES5, but in ES6 two new stra
   let highScore = 0;
   ```
   The reserved word `let` works very similarly to `var`, except that variables created with `let`:
+  
     * have **block scope** instead of function scope
     * do not get hoisted
     * can't be redeclared at the same scope level (the value can change, though)
