@@ -228,7 +228,7 @@ Using `var` was the best way to create variables in ES5, but in ES6 two new stra
 1. Create a variable with the reserved word `let`, with or without giving it an initial value:
 
   ```js
-  let highScorer;
+  let highScore;
   let highScore = 0;
   ```
   
@@ -268,7 +268,7 @@ Instead of storing a value, variables holding objects store a reference to a loc
 
 
   ```js
-  var shirt = { size: "L", color: 'green', clean: false };
+  let shirt = { size: "L", color: 'green', clean: false };
   ```
 
 Objects store information in key-value pairs. The key acts like a label, and the value is the data or behavior associated with that label.
@@ -312,32 +312,23 @@ person.hairColor = 'green';
 // { name: 'Bill', height: '5 feet, 9 inches', age: 34, hairColor: 'green' }
 ```
 
-<!--
-**Semi-removing** a value:  
-
-Use `null` as a marker for an empty value.
-
-```js
-person.hairColor = null;
-```
-
-
-**Fully removing** a key-value pair (rare):
+**Removing** a key-value pair:
 
 ```js
 delete person.height;
 // { name: 'Bill', age: 34, hairColor: 'green' }
 ```
 
-Finding **keys** in the object (rare):
+Finding an object's **keys**:
 
 ```js
-var keys = Object.keys(person);
+let keys = Object.keys(person);
 // ['name', 'age', 'hairColor']
 ```
 
+<!--
 
-**Looping** through Objects (rare):
+**Looping** through objects (rare):
 
 One way to loop through objects in JavaScript is to use `for ... in` loops:
 
@@ -414,28 +405,15 @@ fruits.length; // 10
   }
 
   // if you need the index
-  for (let i=0; i<fruits.length; i++){
+  for (let i = 0; i < fruits.length; i++){
     console.log(`fruit #${i+1} is ${fruits[i]}`);
   }
-```
-
-<!--
-**Adding** an element to the **front**:
-
-```js
-fruits.unshift("Apricot"); // 11
 ```
 
 **Adding** an element to the **end**:  
 
 ```js
 fruits.push("Kiwi"); // 12
-```
-
-**Removing** an element from the **front**:
-
-```js
-fruits.shift(); // "Apricot"
 ```
 
 **Removing** an element from the **end**:  
@@ -449,6 +427,21 @@ fruits.pop(); // "Kiwi"
 ```js
 fruits.indexOf("Jackfruit"); // 9
 fruits[9]; // "Jackfruit"
+
+fruits.indexOf("Puppy"); // -1, i.e. 'Puppy' is not in the `fruits` array
+```
+
+<!--
+**Adding** an element to the **front**:
+
+```js
+fruits.unshift("Apricot"); // 11
+```
+
+**Removing** an element from the **front**:
+
+```js
+fruits.shift(); // "Apricot"
 ``` -->
 
 ![img](http://www.bazarmcbean.com/images/i0oyfwcdsj-caa32f16-489e-e7b9-dadf-028d075cac21.jpg)
