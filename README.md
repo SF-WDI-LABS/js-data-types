@@ -396,7 +396,7 @@ fruits.length; // 10
 
 > Note that length is a property, NOT a method, for JavaScript arrays!
 
-**Looping** through Arrays:
+**Looping** through arrays:
 
 ```js
   // new in ES6! - for... of loops
@@ -406,7 +406,7 @@ fruits.length; // 10
 
   // if you need the index
   for (let i = 0; i < fruits.length; i++){
-    console.log(`fruit #${i+1} is ${fruits[i]}`);
+    console.log(`fruit #${ i + 1 } is ${ fruits[i] }`);
   }
 ```
 
